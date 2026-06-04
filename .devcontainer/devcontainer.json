@@ -1,0 +1,17 @@
+// DH & RSE Summer School 2026: Working Critically with AI Coding Tools
+// Author: Mary Chester-Kadwell
+// Repository: https://github.com/DH-RSE-Summer-School/kdl-ai-coding-tools-2026
+
+{
+  "name": "Working Critically with AI Coding Tools",
+  "image": "mcr.microsoft.com/devcontainers/python:3.14",
+  "postCreateCommand": "cp -n .continue/.env.example .continue/.env",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "continue.continue",
+        "anthropic.claude-code"
+      ]
+    }
+  }
+}

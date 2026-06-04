@@ -1,0 +1,8 @@
+name: Working Critically with AI Coding Tools
+version: 1.0.0
+schema: v1
+models:
+  - name: Open Router Free Models
+    provider: openrouter
+    model: openrouter/free
+    apiKey: ${{ secrets.OPENROUTER_API_KEY }}
