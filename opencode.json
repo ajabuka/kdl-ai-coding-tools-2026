@@ -1,10 +1,26 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "openrouter/openrouter/free",
   "provider": {
     "openrouter": {
       "options": {
         "apiKey": "{env:OPENROUTER_API_KEY}"
+      },
+      "models": {
+        "openrouter/free": { "name": "OpenRouter Free (Random)" },
+        "moonshotai/kimi-k2.6:free": { "name": "Kimi K2.6 (Free)" }
+      }
+    },
+    "llm7": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LLM7",
+      "options": {
+        "baseURL": "https://api.llm7.io/v1",
+        "apiKey": "{env:LLM7_API_KEY}"
+      },
+      "models": {
+        "default": { "name": "Default (Free)" },
+        "fast": { "name": "Fast (Free)" },
+        "qwen3-235b": { "name": "Qwen3-235B (Free)" }
       }
     }
   }

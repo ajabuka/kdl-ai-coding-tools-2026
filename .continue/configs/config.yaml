@@ -6,3 +6,22 @@ models:
     provider: openrouter
     model: openrouter/free
     apiKey: ${{ secrets.OPENROUTER_API_KEY }}
+  - name: Kimi K2.6 (Free)
+    provider: openrouter
+    model: moonshotai/kimi-k2.6:free
+    apiKey: ${{ secrets.OPENROUTER_API_KEY }}
+  - name: LLM7 Default (Free)
+    provider: openai
+    model: default
+    apiBase: https://api.llm7.io/v1
+    apiKey: ${{ secrets.LLM7_API_KEY }}
+  - name: LLM7 Fast (Free)
+    provider: openai
+    model: fast
+    apiBase: https://api.llm7.io/v1
+    apiKey: ${{ secrets.LLM7_API_KEY }}
+  - name: LLM7 Qwen3-235B (Free)
+    provider: openai
+    model: qwen3-235b
+    apiBase: https://api.llm7.io/v1
+    apiKey: ${{ secrets.LLM7_API_KEY }}

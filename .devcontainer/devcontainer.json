@@ -9,7 +9,8 @@
     "ghcr.io/devcontainers/features/node:1": { "version": "lts" }
   },
   "remoteEnv": {
-    "OPENROUTER_API_KEY": "${localEnv:OPENROUTER_API_KEY}"
+    "OPENROUTER_API_KEY": "${localEnv:OPENROUTER_API_KEY}",
+    "LLM7_API_KEY": "${localEnv:LLM7_API_KEY}"
   },
   "postCreateCommand": "cp -n .continue/.env.example .continue/.env && npm install -g opencode-ai",
   "customizations": {
