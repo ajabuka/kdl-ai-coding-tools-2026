@@ -5,13 +5,20 @@
 {
   "name": "Working Critically with AI Coding Tools",
   "image": "mcr.microsoft.com/devcontainers/python:3.14",
-  "postCreateCommand": "cp -n .continue/.env.example .continue/.env",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "lts" }
+  },
+  "remoteEnv": {
+    "OPENROUTER_API_KEY": "${localEnv:OPENROUTER_API_KEY}"
+  },
+  "postCreateCommand": "cp -n .continue/.env.example .continue/.env && npm install -g opencode-ai",
   "customizations": {
     "vscode": {
       "extensions": [
         "continue.continue",
         "anthropic.claude-code",
-        "saoudrizwan.claude-dev"
+        "saoudrizwan.claude-dev",
+        "sst-dev.opencode"
       ]
     }
   }
