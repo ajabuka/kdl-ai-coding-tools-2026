@@ -6,9 +6,13 @@ models:
     provider: openrouter
     model: openrouter/free
     apiKey: ${{ secrets.OPENROUTER_API_KEY }}
-  - name: Kimi K2.6 (Free)
+  - name: Nex AGI Nex-N2-Pro (free)
     provider: openrouter
-    model: moonshotai/kimi-k2.6:free
+    model: nex-agi/nex-n2-pro:free
+    apiKey: ${{ secrets.OPENROUTER_API_KEY }}
+  - name: Poolside Laguna M.1 (free)
+    provider: openrouter
+    model: poolside/laguna-m.1:free
     apiKey: ${{ secrets.OPENROUTER_API_KEY }}
   - name: LLM7 Default (Free)
     provider: openai
