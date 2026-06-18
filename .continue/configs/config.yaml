@@ -29,3 +29,16 @@ models:
     model: qwen3-235b
     apiBase: https://api.llm7.io/v1
     apiKey: ${{ secrets.LLM7_API_KEY }}
+tools:
+  - builtin: read_file
+  - builtin: read_file_range
+  - builtin: edit_existing_file
+  - builtin: create_new_file
+  - builtin: run_terminal_command
+  - builtin: grep_search
+  - builtin: file_glob_search
+  - builtin: ls
+  - builtin: view_diff
+  - builtin: search_web
+  - builtin: fetch_url_content
+  - builtin: codebase
