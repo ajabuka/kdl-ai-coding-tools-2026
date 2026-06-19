@@ -24,5 +24,13 @@
         "qwen3-235b": { "name": "Qwen3-235B (Free)" }
       }
     }
+  },
+  "permission": {
+    "edit": "ask",
+    "glob": "ask",
+    "grep": "ask",
+    "bash": "ask",
+    "webfetch": "ask",
+    "websearch": "ask"
   }
 }
