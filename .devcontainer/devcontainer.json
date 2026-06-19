@@ -4,7 +4,7 @@
 
 {
   "name": "Working Critically with AI Coding Tools",
-  "image": "mcr.microsoft.com/devcontainers/python:3.14",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
   "features": {
     "ghcr.io/devcontainers/features/node:1": { "version": "lts" }
   },
