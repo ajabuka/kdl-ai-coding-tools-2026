@@ -12,7 +12,7 @@
     "OPENROUTER_API_KEY": "${localEnv:OPENROUTER_API_KEY}",
     "LLM7_API_KEY": "${localEnv:LLM7_API_KEY}"
   },
-  "postCreateCommand": "cp -n .continue/.env.example .continue/.env && npm install -g opencode-ai && pip install -r requirements.txt",
+  "postCreateCommand": "cp -n .continue/.env.example .continue/.env && npm install -g opencode-ai @anthropic-ai/claude-code && pip install -r requirements.txt",
   "customizations": {
     "vscode": {
       "extensions": [
