@@ -7,7 +7,8 @@
       },
       "models": {
         "openrouter/free": { "name": "OpenRouter Free (Random)" },
-        "moonshotai/kimi-k2.6:free": { "name": "Kimi K2.6 (Free)" }
+        "nex-agi/nex-n2-pro:free": { "name": "Nex AGI Nex-N2-Pro (Free)" },
+        "poolside/laguna-m.1:free": { "name": "Poolside Laguna M.1 (Free)" }
       }
     },
     "llm7": {
