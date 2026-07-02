@@ -16,7 +16,7 @@ The project consists of the following components:
 
 The notebook performs these steps:
 
-1. **Load dependencies** — imports required Python packages (nltk, gensim, spaCy, plotly, pandas)
+1. **Load dependencies** — imports required Python packages (nltk, gensim, spaCy, plotly, pandas, nbformat)
 2. **Download language resources** — downloads nltk stop words and the spaCy English language model
 3. **Configure paths** — sets up input (`data/`) and output (`results/`) directories
 4. **Build stop word list** — combines nltk stop words, custom early modern English stop words, and additional domain-specific terms
