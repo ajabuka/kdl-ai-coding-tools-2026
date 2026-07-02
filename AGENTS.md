@@ -1,14 +1,44 @@
-# AGENTS.md — Instructions for AI Coding Agents
+# AGENTS.md
 
-## Purpose
+> **Project:** Teaching repository for *Working Critically with AI Coding Tools* workshop.
+> **Core constraint:** Minimal changes only — do not fix, refactor, or improve anything unless explicitly asked.
 
-This is a **teaching repository** for the *Working Critically with AI Coding Tools* workshop. Do not fix, refactor, or improve anything unless explicitly asked. When asked, only make the minimal change requested — resist the urge to clean up unrelated issues.
+## Toolchain
 
-## AI Use Policy
+| Action | Command |
+|---|---|
+| Install deps | `pip install -r requirements.txt` |
+| Permission model | `opencode.json` — destructive tools require confirmation |
 
-AI assistance is **expected and encouraged**. However, the commit message body **must name the precise model** used (e.g., `deepseek-v4-flash-free`, `claude-sonnet-4-20250514`, `gpt-4o-2025-01-20`, etc.) in a `Co-Authored-By` trailer.
+## Judgment Boundaries
 
-## Example Commit Message (Conventional Commits)
+**NEVER**
+
+- Fix, refactor, or improve code without an explicit request
+- Make cosmetic or opportunistic changes beyond the minimal ask
+- Commit secrets, tokens, or `.env` files
+- Add dependencies without discussion
+
+**ASK**
+
+- Before running destructive operations (already gated by `opencode.json`)
+
+**ALWAYS**
+
+- Name the precise model (e.g., `deepseek-v4-flash-free`) in a `Co-Authored-By` trailer in every commit
+- Use Conventional Commits format
+
+## Commit Convention
+
+```
+<type>(<scope>): <imperative description>
+
+<optional body — explain why, not what>
+
+Co-Authored-By: <Model Name> <noreply@<provider>.com>
+```
+
+**Example:**
 
 ```
 feat(agents): Add AGENTS.md with project conventions
